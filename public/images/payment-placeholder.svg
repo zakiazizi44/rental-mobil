@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#f1f5f9"/>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="48" fill="#94a3b8" text-anchor="middle">Resi Pembayaran</text>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">Belum ada bukti</text>
+</svg>

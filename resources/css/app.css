@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-slate-50 text-slate-800 antialiased;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center justify-center rounded-lg bg-navy-700 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:ring-offset-2 disabled:opacity-60;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-navy-700 ring-1 ring-inset ring-slate-300 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-navy-500;
+    }
+
+    .btn-danger {
+        @apply inline-flex items-center justify-center rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+    }
+
+    .card {
+        @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+    }
+
+    .input-field {
+        @apply w-full rounded-lg border-slate-300 text-sm shadow-sm focus:border-navy-500 focus:ring-navy-500;
+    }
+
+    .hero-text-shadow {
+        text-shadow: 0 4px 24px rgba(7, 16, 33, 0.55);
+    }
+
+    .hero-grid-bg {
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 44px 44px;
+    }
+
+    .card-lift {
+        @apply transition-all duration-300 ease-out;
+    }
+
+    .card-lift:hover {
+        @apply -translate-y-1.5 shadow-xl shadow-navy-900/10;
+    }
+}
+
+@layer utilities {
+    @keyframes fade-up {
+        from {
+            opacity: 0;
+            transform: translateY(18px);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .animate-fade-up {
+        animation: fade-up 0.7s ease-out both;
+    }
+
+    .animate-delay-100 {
+        animation-delay: 0.1s;
+    }
+
+    .animate-delay-200 {
+        animation-delay: 0.2s;
+    }
+
+    .animate-delay-300 {
+        animation-delay: 0.3s;
+    }
+}
